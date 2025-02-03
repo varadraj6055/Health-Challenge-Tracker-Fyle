@@ -1,0 +1,42 @@
+<section fxLayoutAlign="center center">
+  <form fxLayout="column"
+        fxLayoutAlign="center center"
+        fxLayoutGap="15px"
+        fxFlex.xs="100%"
+        fxFlex.gt-xs="400px"
+        (ngSubmit)="onSubmit()"
+        [formGroup]="loginForm">
+    <span class="login-title">Login to your account</span>
+    <mat-form-field>
+      <input type="email"
+             matInput
+             placeholder="Email"
+             required
+             formControlName="email">
+      <mat-hint>Please enter a valid email.</mat-hint>
+      <mat-error *ngIf="loginForm.get('email').hasError('required')">
+        Email is required.
+      </mat-error>
+      <mat-error *ngIf="loginForm.get('email').hasError('email')">
+        Email is invalid.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password"
+             matInput
+             placeholder="Password"
+             required
+             formControlName="password">
+      <mat-hint>Please enter your password.</mat-hint>
+      <mat-error>Password is required.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="!loginForm.valid"
+            *ngIf="!(isLoading$ | async)">
+      Login
+    </button>
+    <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+  </form>
+</section>

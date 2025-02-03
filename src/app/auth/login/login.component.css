@@ -1,0 +1,12 @@
+section {
+  padding: 20px;
+  height: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.login-title {
+  font-size: 30px;
+}
