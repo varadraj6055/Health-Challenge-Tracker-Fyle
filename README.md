@@ -1,33 +1,42 @@
-# Angular Fitness Tracker
+# Health Challenge Tracker
 
-The application was built using [Angular 9](https://angular.io/), [Angular Material](https://material.angular.io/), [NgRx](https://ngrx.io/) and [Firebase](https://firebase.google.com/) as a backend and Host service. It consists of a fitness tracking application by performing Exercises.
+## Fyle Front End Development internship Assignment By : Varadraj Kharosekar
 
-**The application was deployed on Firebase, to access it, click [here](https://angular-fitness-f641e.web.app/).**
+The application is built using **Angular**, **Angular Material**, **NgRx**, and **Firebase** as a backend and hosting service. It helps users track their fitness and health progress.
 
-## Running Application Process on your computer
+## 🚀 Live Demo  
+Click [here](https://angular-fitness-f641e.web.app/) to access the deployed version.
 
-1. Download the application by Clicking [this link](https://github.com/gaetanBloch/angular-fitness/archive/master.zip)
-2. Unzip the application
-3. Download and Install [node.js](https://nodejs.org/en/download/) 
-4. Open a terminal
-5. Make sure you have the latest version of the Angular CLI, if not:
-    - Run `npm uninstall -g angular-cli @angular/cli`
-    - Run `npm cache clean --force`
-    - Run  `npm install -g @angular/cli`
-6. Move to the root of the application
-7. Run `npm install`
-8. Run `ng serve`
-9. Navigate to http://localhost:4200/ with your favourite browser
+## 📌 How to Run the Application Locally
+
+1. **Download the Repository**  
+   ```sh
+   git clone https://github.com/varadraj6055/Health-Challenge-Tracker-Fyle.git
+Navigate to the Project Folder
+
+
+cd Health-Challenge-Tracker-Fyle
+Install Node.js (if not installed)
+Download from here
+
+Ensure Angular CLI is Installed
+
+
+npm uninstall -g @angular/cli
+npm cache clean --force
+npm install -g @angular/cli
+Install Dependencies
+
+npm install
+Run the Application
+ng serve
+Open http://localhost:4200 in your browser.
 
 ## Application
 
 ### Welcome Page
 
 ![Welcome Page](https://i.imgur.com/0DDAe5z.png)
-
-### Sign up Page
-
-![Sign up](https://i.imgur.com/0YskvxB.png)
 
 ### Login Page
 
